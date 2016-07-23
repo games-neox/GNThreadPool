@@ -5,7 +5,7 @@
 
 Pod::Spec.new do |s|
 s.name             = 'GNThreadPool'
-s.version          = '0.1.0'
+s.version          = '0.2.0'
 s.summary          = 'thread pool for Objective-C'
 
 s.homepage         = 'https://github.com/games-neox/GNThreadPool'
@@ -16,8 +16,8 @@ s.source           = { :git => 'https://github.com/games-neox/GNThreadPool.git',
 s.ios.deployment_target = '8.0'
 
 s.dependency 'GNExceptions'
-s.dependency 'GNPreconditions'
 s.dependency 'GNLog'
+s.dependency 'GNPreconditions'
 
 s.source_files = 'GNThreadPool/Classes/*'
 
