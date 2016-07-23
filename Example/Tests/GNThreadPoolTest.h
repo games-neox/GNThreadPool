@@ -8,7 +8,7 @@
 
 #import <XCTest/XCTest.h>
 
-#import <GNThreadPool/GNThreadPool.h>
+#import "GNThreadPool.h"
 
 #define DEFAULT_TESTING_SHORT_TIMEOUT ((NSTimeInterval) 5.f)
 

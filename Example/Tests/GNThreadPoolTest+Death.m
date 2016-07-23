@@ -8,10 +8,10 @@
 
 #import "GNThreadPoolTest.h"
 
-#import <GNExceptions/GNIllegalArgumentException.h>
-#import <GNExceptions/GNIllegalStateException.h>
-#import <GNExceptions/GNNilPointerException.h>
-#import <GNTesting/GNAsyncTaskToken.h>
+#import "GNIllegalArgumentException.h"
+#import "GNIllegalStateException.h"
+#import "GNNilPointerException.h"
+#import "GNAsyncTaskToken.h"
 
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wnonnull"

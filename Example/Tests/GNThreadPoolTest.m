@@ -8,7 +8,7 @@
 
 #import "GNThreadPoolTest.h"
 
-#import <GNTesting/GNAsyncTaskToken.h>
+#import "GNAsyncTaskToken.h"
 
 
 

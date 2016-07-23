@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0597B3EF218F48C83DF20A68 /* Pods_GNThreadPool_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8F378F33CFF0927556A127E /* Pods_GNThreadPool_Tests.framework */; };
 		33540DDC1D3847D900FF32A5 /* GNThreadPoolTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 33540DDB1D3847D900FF32A5 /* GNThreadPoolTest.m */; };
 		33540DDE1D3847F100FF32A5 /* GNThreadPoolTest+Death.m in Sources */ = {isa = PBXBuildFile; fileRef = 33540DDD1D3847F100FF32A5 /* GNThreadPoolTest+Death.m */; };
 		33540DE01D38480900FF32A5 /* GNThreadPoolTest+Main.m in Sources */ = {isa = PBXBuildFile; fileRef = 33540DDF1D38480900FF32A5 /* GNThreadPoolTest+Main.m */; };
@@ -14,16 +15,14 @@
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
-		F205F5CEDB427C9542F922E8 /* Pods_GNThreadPool_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 973CCFF6F3F613CEF0177B75 /* Pods_GNThreadPool_Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0DC52FBAC43E7DA45EC52591 /* Pods-GNThreadPool_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GNThreadPool_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GNThreadPool_Tests/Pods-GNThreadPool_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		33540DDA1D3847AF00FF32A5 /* GNThreadPoolTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GNThreadPoolTest.h; sourceTree = "<group>"; };
 		33540DDB1D3847D900FF32A5 /* GNThreadPoolTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNThreadPoolTest.m; sourceTree = "<group>"; };
 		33540DDD1D3847F100FF32A5 /* GNThreadPoolTest+Death.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GNThreadPoolTest+Death.m"; sourceTree = "<group>"; };
 		33540DDF1D38480900FF32A5 /* GNThreadPoolTest+Main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GNThreadPoolTest+Main.m"; sourceTree = "<group>"; };
-		51CB70CFBE31910C634D94D6 /* Pods-GNThreadPool_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GNThreadPool_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GNThreadPool_Tests/Pods-GNThreadPool_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		3C979F2E18B633A40CE85207 /* Pods-GNThreadPool_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GNThreadPool_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GNThreadPool_Tests/Pods-GNThreadPool_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		6003F591195388D20070C39A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -32,7 +31,8 @@
 		6003F5B7195388D20070C39A /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		973CCFF6F3F613CEF0177B75 /* Pods_GNThreadPool_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GNThreadPool_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4AC036BD3D12FBBD64E1979 /* Pods-GNThreadPool_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GNThreadPool_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GNThreadPool_Tests/Pods-GNThreadPool_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		A8F378F33CFF0927556A127E /* Pods_GNThreadPool_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GNThreadPool_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6F26D17B3D20489851C7589 /* GNThreadPool.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = GNThreadPool.podspec; path = ../GNThreadPool.podspec; sourceTree = "<group>"; };
 		C9259C02B6455AF63F4DCF44 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		D6498DA542D05FF6AC496B2F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
@@ -46,7 +46,7 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				F205F5CEDB427C9542F922E8 /* Pods_GNThreadPool_Tests.framework in Frameworks */,
+				0597B3EF218F48C83DF20A68 /* Pods_GNThreadPool_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,7 +60,7 @@
 				6003F5B5195388D20070C39A /* Tests */,
 				6003F58C195388D20070C39A /* Frameworks */,
 				6003F58B195388D20070C39A /* Products */,
-				A37424B77C41109D895ED00F /* Pods */,
+				CF99EE45CA09622005725391 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,7 +79,7 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				973CCFF6F3F613CEF0177B75 /* Pods_GNThreadPool_Tests.framework */,
+				A8F378F33CFF0927556A127E /* Pods_GNThreadPool_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -116,11 +116,11 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
-		A37424B77C41109D895ED00F /* Pods */ = {
+		CF99EE45CA09622005725391 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				0DC52FBAC43E7DA45EC52591 /* Pods-GNThreadPool_Tests.debug.xcconfig */,
-				51CB70CFBE31910C634D94D6 /* Pods-GNThreadPool_Tests.release.xcconfig */,
+				A4AC036BD3D12FBBD64E1979 /* Pods-GNThreadPool_Tests.debug.xcconfig */,
+				3C979F2E18B633A40CE85207 /* Pods-GNThreadPool_Tests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -132,12 +132,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "GNThreadPool_Tests" */;
 			buildPhases = (
-				2F8CB36A59976BCF63120D0B /* Check Pods Manifest.lock */,
+				F0E8D18E62305D71465A5BA0 /* [CP] Check Pods Manifest.lock */,
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
-				14118491FB384DB4AF43284E /* Embed Pods Frameworks */,
-				7800EBE369CE974E1B8AC5BF /* Copy Pods Resources */,
+				D33C04100806053FC1C512D0 /* [CP] Embed Pods Frameworks */,
+				6A536C046E39BFCFCCE3570B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -194,14 +194,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		14118491FB384DB4AF43284E /* Embed Pods Frameworks */ = {
+		6A536C046E39BFCFCCE3570B /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GNThreadPool_Tests/Pods-GNThreadPool_Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D33C04100806053FC1C512D0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -209,34 +224,19 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GNThreadPool_Tests/Pods-GNThreadPool_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		2F8CB36A59976BCF63120D0B /* Check Pods Manifest.lock */ = {
+		F0E8D18E62305D71465A5BA0 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		7800EBE369CE974E1B8AC5BF /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GNThreadPool_Tests/Pods-GNThreadPool_Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -341,7 +341,7 @@
 		};
 		6003F5C3195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0DC52FBAC43E7DA45EC52591 /* Pods-GNThreadPool_Tests.debug.xcconfig */;
+			baseConfigurationReference = A4AC036BD3D12FBBD64E1979 /* Pods-GNThreadPool_Tests.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -368,7 +368,7 @@
 		};
 		6003F5C4195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 51CB70CFBE31910C634D94D6 /* Pods-GNThreadPool_Tests.release.xcconfig */;
+			baseConfigurationReference = 3C979F2E18B633A40CE85207 /* Pods-GNThreadPool_Tests.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
