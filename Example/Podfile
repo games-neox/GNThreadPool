@@ -1,5 +1,5 @@
 use_frameworks!
 target 'GNThreadPool_Tests' do
-  pod 'GNTesting'
   pod 'GNThreadPool', :path => '../'
+  pod 'GNTesting'
 end

@@ -23,6 +23,3 @@ s.source_files = 'GNThreadPool/Classes/*'
 
 s.public_header_files = 'GNThreadPool/Classes/*.h'
 end
-
-
-
