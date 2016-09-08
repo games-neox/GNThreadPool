@@ -5,7 +5,7 @@
 
 Pod::Spec.new do |s|
 s.name             = 'GNThreadPool'
-s.version          = '0.3.0'
+s.version          = '0.3.1'
 s.summary          = 'thread pool for Objective-C'
 
 s.homepage         = 'https://github.com/games-neox/GNThreadPool'
