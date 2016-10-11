@@ -22,19 +22,19 @@ __attribute__((objc_subclassing_restricted))
 /**
  * @pre {@code threadsAmount} is positive
  */
-- (instancetype _Nonnull)initWithThreadsAmount:(uint)threadsAmount withPriority:(GNThreadPriority)priority;
+- (nonnull instancetype)initWithThreadsAmount:(uint)threadsAmount withPriority:(GNThreadPriority)priority;
 
 /**
  * @pre {@code task} is not a {@code nil} pointer
  *
  * @return {code YES} if the provided {@code task} has successfully been enqueued, otherwise - {@code NO}
  */
-- (BOOL)enqueue:(void (^ _Nonnull)())task;
+- (BOOL)enqueue:(nonnull void (^)())task;
 
 /**
  * @return a non-empty container of threads' names.
  */
-- (NSArray<NSString*>* _Nonnull)getThreadNames;
+- (nonnull NSArray<NSString*>*)getThreadNames;
 
 /**
  * @pre this method has not been called before

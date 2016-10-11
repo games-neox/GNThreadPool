@@ -6,7 +6,7 @@
 //  Copyright © 2016 Games Neox. All rights reserved.
 //
 
-#import "GNThreadPool.h"
+#import <GNThreadPool/GNThreadPool.h>
 
 #import <GNExceptions/GNIllegalArgumentException.h>
 #import <GNExceptions/GNIllegalStateException.h>
@@ -25,12 +25,9 @@
 @interface GNThreadPool ()
 {
 @private
-    // need to keep track of threads so we can join them
-    NSMutableArray<NSThread*>* workers_;
-    // the task queue
+    NSArray<NSThread*>* workers_;
     std::queue<std::function<void()>> tasks_;
 
-    // synchronization
     std::mutex queueMutex_;
     std::condition_variable condition_;
     bool stop_;
@@ -43,27 +40,31 @@
 @end
 
 
-static const NSString* const LOG_TAG = @"ThreadPool";
+static const NSString* const LOG_TAG = @"GNThreadPool";
 
 
 @implementation GNThreadPool
 
-- (instancetype _Nonnull)initWithThreadsAmount:(uint)threadsAmount withPriority:(GNThreadPriority)priority
+- (nonnull instancetype)initWithThreadsAmount:(uint)threadsAmount withPriority:(GNThreadPriority)priority
 {
     [GNPreconditions checkCondition:(0 < threadsAmount) :[GNIllegalArgumentException class] :@"0 < threadsAmount!"];
+    [GNPreconditions checkCondition:((GNThreadPriorityNormal == priority) || (GNThreadPriorityHigher == priority))
+            :[GNIllegalArgumentException class] :@"priority!"];
 
     self = [super init];
     if (nil != self) {
-        workers_ = [[NSMutableArray alloc] init];
+        NSMutableArray<NSThread*>* workers = [[NSMutableArray alloc] init];
 
         for (uint i = 0; i < threadsAmount; ++i) {
             NSThread* newThread = [[NSThread alloc] initWithTarget:self selector:@selector(workerMethod:) object:nil];
-            [workers_ addObject:newThread];
+            [workers addObject:newThread];
             if (GNThreadPriorityHigher == priority) {
                 newThread.threadPriority = 1.f;
             }
             [newThread start];
         }
+
+        workers_ = workers;
     }
 
     return self;
@@ -107,7 +108,7 @@ static const NSString* const LOG_TAG = @"ThreadPool";
 }
 
 
-- (BOOL)enqueue:(void (^ _Nonnull)())task
+- (BOOL)enqueue:(nonnull void (^)())task
 {
     [GNPreconditions checkNotNil:task :@"task!"];
 
@@ -118,9 +119,7 @@ static const NSString* const LOG_TAG = @"ThreadPool";
     {
         std::lock_guard<std::mutex> queueLock(queueMutex_);
 
-        // don't allow enqueueing after stopping the pool
         if (stop_) {
-            // enqueue on stopped ThreadPool
             return NO;
         }
 
@@ -132,7 +131,7 @@ static const NSString* const LOG_TAG = @"ThreadPool";
 }
 
 
-- (NSArray<NSString*>* _Nonnull)getThreadNames
+- (nonnull NSArray<NSString*>*)getThreadNames
 {
     LOG_WRITE_VERBOSE(LOG_TAG, @"getThreadNames(): Enter");
 
@@ -169,8 +168,8 @@ static const NSString* const LOG_TAG = @"ThreadPool";
 - (void)joinWorkers
 {
     condition_.notify_all();
-    
-    workers_ = [@[] mutableCopy];
+
+    workers_ = @[];
 }
 
 @end

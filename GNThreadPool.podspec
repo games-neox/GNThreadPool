@@ -4,14 +4,14 @@
 #
 
 Pod::Spec.new do |s|
-s.name             = 'GNThreadPool'
-s.version          = '0.3.1'
-s.summary          = 'thread pool for Objective-C'
+s.name                  = 'GNThreadPool'
+s.version               = '0.3.1'
+s.summary               = 'thread pool for Objective-C'
 
-s.homepage         = 'https://github.com/games-neox/GNThreadPool'
-s.license          = { :type => 'MIT', :file => 'LICENSE' }
-s.author           = { 'Games Neox' => 'games.neox@gmail.com' }
-s.source           = { :git => 'https://github.com/games-neox/GNThreadPool.git', :tag => s.version.to_s }
+s.homepage              = 'https://github.com/games-neox/GNThreadPool'
+s.license               = { :type => 'MIT', :file => 'LICENSE' }
+s.author                = { 'Games Neox' => 'games.neox@gmail.com' }
+s.source                = { :git => 'https://github.com/games-neox/GNThreadPool.git', :tag => s.version.to_s }
 
 s.ios.deployment_target = '8.0'
 
@@ -19,7 +19,7 @@ s.dependency 'GNExceptions'
 s.dependency 'GNLog'
 s.dependency 'GNPreconditions'
 
-s.source_files = 'GNThreadPool/Classes/*'
+s.source_files          = 'GNThreadPool/Classes/*'
 
-s.public_header_files = 'GNThreadPool/Classes/*.h'
+s.public_header_files   = 'GNThreadPool/Classes/*.h'
 end
