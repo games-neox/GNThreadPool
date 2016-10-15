@@ -10,7 +10,7 @@ Basis usage:
 ```objective-c
 #import <GNThreadPool/GNThreadPool.h>
 
-GNThreadPool* threadPool = [[GNThreadPool alloc] initWithThreadsAmount:4 withPriority: GNThreadPriorityHigher];
+GNThreadPool* threadPool = [[GNThreadPool alloc] initWithThreadsAmount:4 withPriority:GNThreadPriorityHigher];
 
 [threadPool enqueue:^{
     NSLog(@"in a separate thread");
@@ -43,8 +43,7 @@ Dependencies: `GNExceptions`, `GNLog` & `GNPreconditions`
 
 ## Installation
 
-GNThreadPool is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+GNThreadPool is available through [CocoaPods](http://cocoapods.org). To install it, simply add the following line to your Podfile:
 
 ```ruby
 pod "GNThreadPool"
